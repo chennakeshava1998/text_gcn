@@ -431,6 +431,32 @@ row = []
 col = []
 weight = []
 
+# doc to doc cosine similarity
+import spacy
+nlp = spacy.load("en_core_web_md")
+
+docs_w = shuffle_doc_words_str.split('\n')
+spacy_vecs = []
+
+for i, id in enumerate(ids):
+	# words_id = docs_w[i].split()
+	spacy_vecs.append(nlp(docs_w[i]))
+
+for i in range(train_size):
+	for j in range(train_size):
+		if i == j:
+			continue
+		if i < train_size:
+			row.append(i)
+		else:
+			row.append(i + vocab_size)
+		if j < train_size:
+			col.append(j)
+		else:
+			col.append(j + vocab_size)
+		# comparison for weights
+		weight.append(spacy_vecs[i].similarity(spacy_vecs[j]))
+
 # pmi as weights
 
 num_window = len(windows)
