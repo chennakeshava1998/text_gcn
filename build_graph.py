@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 import os
 import random
 import numpy as np
@@ -28,7 +29,7 @@ if dataset not in datasets:
 #_, embd, word_vector_map = loadWord2Vec(word_vector_file)
 # word_embeddings_dim = len(embd[0])
 
-word_embeddings_dim = 300
+word_embeddings_dim = 100
 word_vector_map = {}
 
 # shulffing
