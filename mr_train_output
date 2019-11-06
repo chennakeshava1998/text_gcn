@@ -1,0 +1,335 @@
+WARNING:tensorflow:From train.py:27: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+/home/chenna/text_gcn/utils.py:214: RuntimeWarning: invalid value encountered in power
+  d_inv_sqrt = np.power(rowsum, -0.5).flatten()
+WARNING:tensorflow:From train.py:77: The name tf.sparse_placeholder is deprecated. Please use tf.compat.v1.sparse_placeholder instead.
+
+WARNING:tensorflow:From train.py:79: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From train.py:81: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /home/chenna/text_gcn/models.py:143: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From /home/chenna/text_gcn/models.py:41: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/chenna/text_gcn/inits.py:14: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/chenna/text_gcn/layers.py:82: The name tf.summary.histogram is deprecated. Please use tf.compat.v1.summary.histogram instead.
+
+WARNING:tensorflow:From /home/chenna/text_gcn/layers.py:26: The name tf.sparse_retain is deprecated. Please use tf.sparse.retain instead.
+
+WARNING:tensorflow:From /home/chenna/text_gcn/layers.py:33: The name tf.sparse_tensor_dense_matmul is deprecated. Please use tf.sparse.sparse_dense_matmul instead.
+
+WARNING:tensorflow:From /home/chenna/text_gcn/layers.py:170: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/chenna/text_gcn/models.py:52: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /home/chenna/text_gcn/models.py:52: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /home/chenna/text_gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+WARNING:tensorflow:From train.py:91: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From train.py:91: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From train.py:92: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2019-11-06 12:13:36.894121: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  AVX2 AVX512F FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2019-11-06 12:13:36.902472: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2000170000 Hz
+2019-11-06 12:13:36.902715: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562c17226d90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2019-11-06 12:13:36.902743: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From train.py:105: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+((6398, 300), (6398, 2), (3554, 300), (3554, 2), (25872, 300), (25872, 2))
+29426
+  (0, 1)	0.8345471273673085
+  (0, 2)	0.8537607483576894
+  (0, 3)	0.7181143660614889
+  (0, 4)	0.8039708674594093
+  (0, 5)	0.6979159541925233
+  (0, 6)	0.7484902045160828
+  (0, 7)	0.8639922414263179
+  (0, 8)	0.8813474915759694
+  (0, 9)	0.8898522876087761
+  (0, 10)	0.8303562419890494
+  (0, 11)	0.5846595694977701
+  (0, 12)	0.7452835775633302
+  (0, 13)	0.8991389118747124
+  (0, 14)	0.778280072060643
+  (0, 15)	0.9037078487774054
+  (0, 16)	0.879377959816265
+  (0, 17)	0.7768276461291099
+  (0, 18)	0.8613701907882209
+  (0, 19)	0.8519330180145963
+  (0, 20)	0.7920811262949893
+  (0, 21)	0.78278825886022
+  (0, 22)	0.876543148950548
+  (0, 23)	0.9055222196357073
+  (0, 24)	0.8192065181912748
+  (0, 25)	0.867784712197016
+  :	:
+  (29424, 10850)	2.030213781779356
+  (29424, 13294)	6.501852575142925
+  (29424, 14883)	9.274441297382706
+  (29424, 16743)	0.5465010749888104
+  (29424, 18098)	3.57399772399202
+  (29424, 19975)	7.888146936262816
+  (29424, 21019)	2.730529451817914
+  (29424, 23410)	3.1674184096404523
+  (29424, 25558)	6.6353839677674475
+  (29425, 10796)	7.888146936262816
+  (29425, 10850)	2.030213781779356
+  (29425, 11518)	3.9661735999815013
+  (29425, 12708)	1.1115554606675069
+  (29425, 15479)	6.9718562043886605
+  (29425, 16743)	0.5465010749888104
+  (29425, 16745)	4.132777740880046
+  (29425, 17253)	1.240134361043218
+  (29425, 17255)	1.3489223175957803
+  (29425, 17270)	3.0053450136764446
+  (29425, 17412)	5.536771679099338
+  (29425, 20552)	2.8511943338491865
+  (29425, 21338)	3.765052960754729
+  (29425, 21931)	3.7253652124874868
+  (29425, 23369)	0.8349934545913218
+  (29425, 24260)	6.18339884402439
+(29426, 29426)
+(29426, 29426)
+29426
+Tensor("graphconvolution_2/SparseTensorDenseMatMul/SparseTensorDenseMatMul:0", shape=(?, 2), dtype=float32)
+Epoch: 0001 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 8.14215
+Epoch: 0002 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 8.43204
+Epoch: 0003 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 10.01363
+Epoch: 0004 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 10.51261
+Epoch: 0005 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.33077
+Epoch: 0006 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26255
+Epoch: 0007 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30852
+Epoch: 0008 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23447
+Epoch: 0009 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30828
+Epoch: 0010 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.36074
+Epoch: 0011 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30494
+Epoch: 0012 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30085
+Epoch: 0013 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27633
+Epoch: 0014 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29868
+Epoch: 0015 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27943
+Epoch: 0016 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.35249
+Epoch: 0017 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29424
+Epoch: 0018 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30232
+Epoch: 0019 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28714
+Epoch: 0020 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31820
+Epoch: 0021 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31790
+Epoch: 0022 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28409
+Epoch: 0023 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.32789
+Epoch: 0024 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.24201
+Epoch: 0025 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28870
+Epoch: 0026 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26769
+Epoch: 0027 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29026
+Epoch: 0028 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29793
+Epoch: 0029 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.34404
+Epoch: 0030 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.33923
+Epoch: 0031 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26659
+Epoch: 0032 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.32360
+Epoch: 0033 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27869
+Epoch: 0034 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 8.16999
+Epoch: 0035 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 10.24135
+Epoch: 0036 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 10.57361
+Epoch: 0037 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.58560
+Epoch: 0038 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31963
+Epoch: 0039 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31536
+Epoch: 0040 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31763
+Epoch: 0041 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28822
+Epoch: 0042 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27621
+Epoch: 0043 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.32833
+Epoch: 0044 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29770
+Epoch: 0045 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26117
+Epoch: 0046 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30772
+Epoch: 0047 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23482
+Epoch: 0048 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28878
+Epoch: 0049 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.24025
+Epoch: 0050 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29074
+Epoch: 0051 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31188
+Epoch: 0052 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.33080
+Epoch: 0053 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26881
+Epoch: 0054 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26291
+Epoch: 0055 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27382
+Epoch: 0056 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.36918
+Epoch: 0057 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.37237
+Epoch: 0058 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28204
+Epoch: 0059 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29251
+Epoch: 0060 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30587
+Epoch: 0061 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28437
+Epoch: 0062 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.32080
+Epoch: 0063 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27030
+Epoch: 0064 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30081
+Epoch: 0065 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27912
+Epoch: 0066 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.32807
+Epoch: 0067 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27524
+Epoch: 0068 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27598
+Epoch: 0069 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27744
+Epoch: 0070 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30980
+Epoch: 0071 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31848
+Epoch: 0072 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27703
+Epoch: 0073 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.33425
+Epoch: 0074 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30183
+Epoch: 0075 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29200
+Epoch: 0076 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27592
+Epoch: 0077 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30695
+Epoch: 0078 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30208
+Epoch: 0079 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29280
+Epoch: 0080 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29107
+Epoch: 0081 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.56096
+Epoch: 0082 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31046
+Epoch: 0083 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28949
+Epoch: 0084 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30915
+Epoch: 0085 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23704
+Epoch: 0086 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29591
+Epoch: 0087 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27681
+Epoch: 0088 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31282
+Epoch: 0089 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.24911
+Epoch: 0090 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26647
+Epoch: 0091 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.24759
+Epoch: 0092 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30139
+Epoch: 0093 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27711
+Epoch: 0094 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31771
+Epoch: 0095 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.34439
+Epoch: 0096 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28643
+Epoch: 0097 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26516
+Epoch: 0098 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.25159
+Epoch: 0099 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27320
+Epoch: 0100 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26483
+Epoch: 0101 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30399
+Epoch: 0102 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26951
+Epoch: 0103 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30286
+Epoch: 0104 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31199
+Epoch: 0105 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.29851
+Epoch: 0106 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.33378
+Epoch: 0107 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26079
+Epoch: 0108 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31041
+Epoch: 0109 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28359
+Epoch: 0110 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30331
+Epoch: 0111 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.32541
+Epoch: 0112 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26543
+Epoch: 0113 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.30143
+Epoch: 0114 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.31587
+Epoch: 0115 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.20729
+Epoch: 0116 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23168
+Epoch: 0117 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.19637
+Epoch: 0118 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21565
+Epoch: 0119 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22398
+Epoch: 0120 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22576
+Epoch: 0121 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22467
+Epoch: 0122 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21243
+Epoch: 0123 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23995
+Epoch: 0124 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22111
+Epoch: 0125 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21142
+Epoch: 0126 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.20895
+Epoch: 0127 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22895
+Epoch: 0128 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22787
+Epoch: 0129 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22258
+Epoch: 0130 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22356
+Epoch: 0131 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22722
+Epoch: 0132 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23884
+Epoch: 0133 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.24424
+Epoch: 0134 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.24852
+Epoch: 0135 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.25683
+Epoch: 0136 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23359
+Epoch: 0137 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.32091
+Epoch: 0138 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28728
+Epoch: 0139 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.25071
+Epoch: 0140 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.28694
+Epoch: 0141 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.25288
+Epoch: 0142 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23154
+Epoch: 0143 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22626
+Epoch: 0144 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.25631
+Epoch: 0145 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.24187
+Epoch: 0146 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.24068
+Epoch: 0147 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21888
+Epoch: 0148 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23031
+Epoch: 0149 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22824
+Epoch: 0150 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23004
+Epoch: 0151 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23096
+Epoch: 0152 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23064
+Epoch: 0153 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22949
+Epoch: 0154 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.24620
+Epoch: 0155 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22412
+Epoch: 0156 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21820
+Epoch: 0157 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22214
+Epoch: 0158 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22370
+Epoch: 0159 train_/usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23042
+Epoch: 0160 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.20661
+Epoch: 0161 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22576
+Epoch: 0162 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22029
+Epoch: 0163 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21217
+Epoch: 0164 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22080
+Epoch: 0165 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21376
+Epoch: 0166 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21989
+Epoch: 0167 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23311
+Epoch: 0168 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22085
+Epoch: 0169 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22602
+Epoch: 0170 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21401
+Epoch: 0171 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22760
+Epoch: 0172 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.24410
+Epoch: 0173 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22638
+Epoch: 0174 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23178
+Epoch: 0175 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.20755
+Epoch: 0176 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21636
+Epoch: 0177 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23140
+Epoch: 0178 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21713
+Epoch: 0179 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21905
+Epoch: 0180 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.27474
+Epoch: 0181 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26793
+Epoch: 0182 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22688
+Epoch: 0183 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.26638
+Epoch: 0184 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22919
+Epoch: 0185 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22405
+Epoch: 0186 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21987
+Epoch: 0187 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22785
+Epoch: 0188 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21603
+Epoch: 0189 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23615
+Epoch: 0190 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23292
+Epoch: 0191 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22703
+Epoch: 0192 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21627
+Epoch: 0193 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22125
+Epoch: 0194 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21744
+Epoch: 0195 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21131
+Epoch: 0196 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.21992
+Epoch: 0197 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.20977
+Epoch: 0198 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.23064
+Epoch: 0199 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.22225
+Epoch: 0200 train_loss= nan train_acc= 0.50313 val_loss= nan val_acc= 0.47183 time= 7.20267
+Optimization Finished!
+Test set results: cost= nan accuracy= 0.50000 time= 2.92819
+29426
+Test Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+           0     0.5000    1.0000    0.6667      1777
+           1     0.0000    0.0000    0.0000      1777
+
+   micro avg     0.5000    0.5000    0.5000      3554
+   macro avg     0.2500    0.5000    0.3333      3554
+weighted avg     0.2500    0.5000    0.3333      3554
+
+Macro average Test Precision, Recall and F1-Score...
+(0.25, 0.5, 0.3333333333333333, None)
+Micro average Test Precision, Recall and F1-Score...
+(0.5, 0.5, 0.5, None)
+embeddings:
+18764 7108 3554
+[[nan nan nan ... nan nan nan]
+ [nan nan nan ... nan nan nan]
+ [nan nan nan ... nan nan nan]
+ ...
+ [nan nan nan ... nan nan nan]
+ [nan nan nan ... nan nan nan]
+ [nan nan nan ... nan nan nan]]

@@ -1,0 +1,14 @@
+WARNING:tensorflow:From train.py:27: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+Traceback (most recent call last):
+  File "train.py", line 50, in <module>
+    FLAGS.dataset)
+  File "/home/chenna/text_gcn/utils.py", line 145, in load_corpus
+    objects.append(pkl.load(f))
+  File "/usr/lib/python2.7/pickle.py", line 1384, in load
+    return Unpickler(file).load()
+  File "/usr/lib/python2.7/pickle.py", line 864, in load
+    dispatch[key](self)
+  File "/usr/lib/python2.7/pickle.py", line 886, in load_eof
+    raise EOFError
+EOFError
