@@ -91,9 +91,13 @@ ids = train_ids + test_ids
 
 shuffle_doc_name_list = []
 shuffle_doc_words_list = []
+# docs_w = []
 for id in ids:
     shuffle_doc_name_list.append(doc_name_list[int(id)])
     shuffle_doc_words_list.append(doc_content_list[int(id)])
+
+docs_w = shuffle_doc_name_list
+	
 shuffle_doc_name_str = '\n'.join(shuffle_doc_name_list)
 shuffle_doc_words_str = '\n'.join(shuffle_doc_words_list)
 
@@ -431,12 +435,11 @@ for window in windows:
 row = []
 col = []
 weight = []
+# docs_w = shuffle_doc_words_list
 print("\n\nPerforming doc2doc cosine similarity\n\n")
 # doc to doc cosine similarity
 import spacy
 nlp = spacy.load("en_core_web_lg")
-
-docs_w = shuffle_doc_words_str.split('\n')
 spacy_vecs = []
 
 for i, id in enumerate(ids):
