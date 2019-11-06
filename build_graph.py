@@ -47,7 +47,7 @@ for line in lines:
     elif temp[1].find('train') != -1:
         doc_train_list.append(line.strip())
 f.close()
-# print(doc_train_list)
+# (doc_train_list)
 # print(doc_test_list)
 
 doc_content_list = []
@@ -62,7 +62,7 @@ train_ids = []
 for train_name in doc_train_list:
     train_id = doc_name_list.index(train_name)
     train_ids.append(train_id)
-print(train_ids)
+# print(train_ids)
 random.shuffle(train_ids)
 
 # partial labeled data
@@ -77,7 +77,7 @@ test_ids = []
 for test_name in doc_test_list:
     test_id = doc_name_list.index(test_name)
     test_ids.append(test_id)
-print(test_ids)
+# print(test_ids)
 random.shuffle(test_ids)
 
 test_ids_str = '\n'.join(str(index) for index in test_ids)
@@ -86,8 +86,8 @@ f.write(test_ids_str)
 f.close()
 
 ids = train_ids + test_ids
-print(ids)
-print(len(ids))
+# print(ids)
+# print(len(ids))
 
 shuffle_doc_name_list = []
 shuffle_doc_words_list = []
@@ -269,7 +269,7 @@ for i in range(real_train_size):
     one_hot[label_index] = 1
     y.append(one_hot)
 y = np.array(y)
-print(y)
+# print(y)
 
 # tx: feature vectors of test docs, no initial features
 test_size = len(test_ids)
@@ -307,7 +307,7 @@ for i in range(test_size):
     one_hot[label_index] = 1
     ty.append(one_hot)
 ty = np.array(ty)
-print(ty)
+# print(ty)
 
 # allx: the the feature vectors of both labeled and unlabeled training instances
 # (a superset of x)
@@ -371,7 +371,7 @@ for i in range(vocab_size):
 
 ally = np.array(ally)
 
-print(x.shape, y.shape, tx.shape, ty.shape, allx.shape, ally.shape)
+# print(x.shape, y.shape, tx.shape, ty.shape, allx.shape, ally.shape)
 
 '''
 Doc word heterogeneous graph
@@ -431,7 +431,7 @@ for window in windows:
 row = []
 col = []
 weight = []
-
+print("\n\nPerforming doc2doc cosine similarity\n\n")
 # doc to doc cosine similarity
 import spacy
 nlp = spacy.load("en_core_web_lg")
@@ -445,20 +445,17 @@ for i, id in enumerate(ids):
 
 for i in range(train_size):
 	for j in range(train_size):
-		if i == j:
+		doc_weight = spacy_vecs[i].similarity(spacy_vecs[j])
+		if doc_weight <= 0:
 			continue
-		if i < train_size:
-			row.append(i)
-		else:
-			row.append(i + vocab_size)
-		if j < train_size:
-			col.append(j)
-		else:
-			col.append(j + vocab_size)
+			
+		row.append(i)
+		col.append(j)
+		weight.append(doc_weight)
 		# comparison for weights
-		weight.append(spacy_vecs[i].similarity(spacy_vecs[j]))
 
 # pmi as weights
+print("Added edges between {} documents\n".format(len(row)))
 
 num_window = len(windows)
 
