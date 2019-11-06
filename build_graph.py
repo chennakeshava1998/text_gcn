@@ -433,7 +433,7 @@ weight = []
 
 # doc to doc cosine similarity
 import spacy
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_lg")
 
 docs_w = shuffle_doc_words_str.split('\n')
 spacy_vecs = []
