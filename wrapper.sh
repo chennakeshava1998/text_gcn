@@ -1,3 +1,4 @@
-python remove_words.py $1 
+python remove_words.py $1
 python build_graph.py $1 
-python train.py 20ng $1 > train_out1
+echo "Completed build_graph"
+python train.py $1 

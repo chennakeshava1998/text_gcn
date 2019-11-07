@@ -446,14 +446,21 @@ for i, id in enumerate(ids):
 	# words_id = docs_w[i].split()
 	spacy_vecs.append(nlp(docs_w[i]))
 
-for i in range(train_size):
-	for j in range(train_size):
+for i in range(len(ids)):
+	for j in range(len(ids)):
 		doc_weight = spacy_vecs[i].similarity(spacy_vecs[j])
 		if doc_weight <= 0:
 			continue
-			
-		row.append(i)
-		col.append(j)
+                if i < train_size:	
+		    row.append(i)
+                else:
+                    row.append(i + vocab_size)
+
+                if j < train_size:
+                    col.append(j)
+                else:
+                    col.append(j + vocab_size)
+
 		weight.append(doc_weight)
 		# comparison for weights
 

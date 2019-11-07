@@ -1,0 +1,58 @@
+[nltk_data] Downloading package stopwords to /home/chenna/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+set([u'all', u'just', u"don't", u'being', u'over', u'both', u'through', u'yourselves', u'its', u'before', u'o', u'don', u'hadn', u'herself', u'll', u'had', u'should', u'to', u'only', u'won', u'under', u'ours', u'has', u"should've", u"haven't", u'do', u'them', u'his', u'very', u"you've", u'they', u'not', u'during', u'now', u'him', u'nor', u"wasn't", u'd', u'did', u'didn', u'this', u'she', u'each', u'further', u"won't", u'where', u"mustn't", u"isn't", u'few', u'because', u"you'd", u'doing', u'some', u'hasn', u"hasn't", u'are', u'our', u'ourselves', u'out', u'what', u'for', u"needn't", u'below', u're', u'does', u"shouldn't", u'above', u'between', u'mustn', u't', u'be', u'we', u'who', u"mightn't", u"doesn't", u'were', u'here', u'shouldn', u'hers', u"aren't", u'by', u'on', u'about', u'couldn', u'of', u"wouldn't", u'against', u's', u'isn', u'or', u'own', u'into', u'yourself', u'down', u"hadn't", u'mightn', u"couldn't", u'wasn', u'your', u"you're", u'from', u'her', u'their', u'aren', u"it's", u'there', u'been', u'whom', u'too', u'wouldn', u'themselves', u'weren', u'was', u'until', u'more', u'himself', u'that', u"didn't", u'but', u"that'll", u'with', u'than', u'those', u'he', u'me', u'myself', u'ma', u"weren't", u'these', u'up', u'will', u'while', u'ain', u'can', u'theirs', u'my', u'and', u've', u'then', u'is', u'am', u'it', u'doesn', u'an', u'as', u'itself', u'at', u'have', u'in', u'any', u'if', u'again', u'no', u'when', u'same', u'how', u'other', u'which', u'you', u"shan't", u'shan', u'needn', u'haven', u'after', u'most', u'such', u'why', u'a', u'off', u'i', u'm', u'yours', u"you'll", u'so', u'y', u"she's", u'the', u'having', u'once'])
+min_len : 14
+max_len : 35702
+average_len : 221.256977608
+
+
+Performing doc2doc cosine similarity
+
+
+Added edges between 128006596 documents
+
+Traceback (most recent call last):
+  File "build_graph.py", line 556, in <module>
+    pkl.dump(adj, f)
+  File "/usr/lib/python2.7/pickle.py", line 1376, in dump
+    Pickler(file, protocol).dump(obj)
+  File "/usr/lib/python2.7/pickle.py", line 224, in dump
+    self.save(obj)
+  File "/usr/lib/python2.7/pickle.py", line 331, in save
+    self.save_reduce(obj=obj, *rv)
+  File "/usr/lib/python2.7/pickle.py", line 425, in save_reduce
+    save(state)
+  File "/usr/lib/python2.7/pickle.py", line 286, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/lib/python2.7/pickle.py", line 655, in save_dict
+    self._batch_setitems(obj.iteritems())
+  File "/usr/lib/python2.7/pickle.py", line 669, in _batch_setitems
+    save(v)
+  File "/usr/lib/python2.7/pickle.py", line 331, in save
+    self.save_reduce(obj=obj, *rv)
+  File "/usr/lib/python2.7/pickle.py", line 425, in save_reduce
+    save(state)
+  File "/usr/lib/python2.7/pickle.py", line 286, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/lib/python2.7/pickle.py", line 568, in save_tuple
+    save(element)
+  File "/usr/lib/python2.7/pickle.py", line 286, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/lib/python2.7/pickle.py", line 494, in save_string
+    self.write(STRING + repr(obj) + '\n')
+MemoryError
+Completed build_graph
+WARNING:tensorflow:From train.py:27: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+Traceback (most recent call last):
+  File "train.py", line 50, in <module>
+    FLAGS.dataset)
+  File "/home/chenna/text_gcn/utils.py", line 145, in load_corpus
+    objects.append(pkl.load(f))
+  File "/usr/lib/python2.7/pickle.py", line 1384, in load
+    return Unpickler(file).load()
+  File "/usr/lib/python2.7/pickle.py", line 864, in load
+    dispatch[key](self)
+  File "/usr/lib/python2.7/pickle.py", line 886, in load_eof
+    raise EOFError
+EOFError
